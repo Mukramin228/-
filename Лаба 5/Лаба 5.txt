@@ -1,0 +1,14 @@
+%gan("Manufacturer country", "Model", "Power", "weight")
+
+gan(russia, ak-47,  600, 4).
+gan(ssha, deagle, 267, 2).
+gan(greatbritan, awp, 60, 6).
+gan(germany, ump, 600, 2).
+gan(avstriya, glock, 1200, 1).
+
+rus_gan(X) :- gan(russia,X,_,_).
+power(X) :- gan(_,X,600,_).
+weight(X) :- gan(_,X,_,2).
+
+
+
